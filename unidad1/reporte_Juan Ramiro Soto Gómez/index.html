@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Estancias</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+	
+<body>
+	<div class="contenido">
+
+		<header>
+			<h1>Resumen estancias</h1>
+		</header>
+
+		<nav>
+			<ul>
+				<li> <a href="#primerospasos">Primeros pasos</a></li>
+				<li> <a href="#antes">Antes de subir la página</a></li>
+				<li> <a href="#subiendo">Subiendo la página</a></li>
+				<li> <a href="#terminar">Para terminar</a></li>
+			</ul>
+		</nav>
+
+		<div class="principal">
+			<main>
+				<h2>Resumen</h2>
+				<p> La estancia 1 fue realizada dentro de las instalaciones de la SUBSECRETARIA DE INNOVACIÓN Y TECNOLOGÍAS DE LA INFORMACIÓN, ubicada dentro de la Torre Bicentenario con dirección Parque Bicentenario, Boulevard Praxedis Balboa 87083.
+				En este reporte se mostrará lo realizado en la semana que comprende los días martes 19 de noviembre de 2019 hasta viernes 22 de noviembre de 2019.
+				Las actividades que fueron llevadas a cabo fueron asignadas por el proyecto de “Implementación De Sistema De Administración, Control Y Repositorio De La Plataforma CAPASITI”, el cual tiene como fin mostrar a los alumnos como se desarrollan las actividades dentro de una empresa y por sobre todo poder implementar los conocimientos adquiridos durante los cuatrimestres cursados anteriormente, así como la adquisición de nuevos saberes.</p>
+
+				<section id="primerospasos">
+					<h3>Primeros pasos</h3>
+					<p> El primer paso para comenzar con la práctica, fue facilitada una carpeta con la cuál acceder de manera local a la página que se deseaba modificar, esta fue ingresada como se mostró anteriormente a la carpeta www de wamp, sin embargo, se encontró que al momento de querer acceder de manera local se redirigía de manera automática a otra red.
+					<br>
+					Después de esto, haciendo uso de FileZilla, se descargaron los archivos que se encontraban en el servidor. Pero antes de esto se necesitó conectar a través de la red IP del usuario para que se le cedieran los permisos para poder editar el servidor capasiti.tamaulipas.gob.mx pasando por primera instancia conectarse a la IP de la Torre Bicentenario para poder acceder a dicho servidor.</p>
+
+				</section>
+
+				<section id="antes">
+					<h3>Antes de subir la página</h3>
+					<p> Como otra de las tareas encomendadas, fue necesario realizar un re direccionamiento, pero ahora en lugar de acceder al inicio se buscaba acceder a la sección de cursos que se encuentran dentro de CAPASITI. Para poder realizar esto se accedió a app->controler->components->appcontroler líneas 156-157 y se cambió la dirección.
+						<br>
+					Una de las ultimas tareas antes de poder subirlo al servidor fue cambiar las opciones de Login y Logout, es decir, las opciones que redirigen a una u otra parte de la página al ingresar un usuario, esto se encuentra en app->components->appController en $this->Auth-> loginAction = '/usuarios/login/'; logoutRedirect = '/usuarios/login/'; loginRedirect = '/pages/index/'.</p>
+				</section>
+
+				<section id="subiendo">
+					<h3>Subiendo la página</h3>
+					<p>Con la plataforma en funcionamiento, se comenzó con la depuración de la base de datos, esto gracias a los permisos de administrador que se consiguieron, siendo más fácil la eliminación de elementos no necesarios, como lo eran algunos usuarios y cursos que se encontraban, dejando solo un grupo de usuarios que funcionan como pruebas para revisar si cada uno tiene sus permisos correspondientes.
+						<br>
+					Se encontró que el error surgía debido a que en el código ubicado en UsuariosCalendarizadosController.php en las líneas 591 a la 595 se hacía mal uso de una palabra reservada, además de que había palabras mal escritas que hacían referencia a tablas de la base de datos, por lo cual nunca se podía acceder a la misma y generar los reportes.
+					</p>
+				</section>
+
+				<section id="terminar">
+					<h3>Para terminar</h3>
+					<p>Ahora, con las nuevas actualizaciones, subidas utilizando nuevamente FileZilla, se realizaron algunas pruebas con personas ajenas al proyecto, esto con el fin de observar que tan didáctica es la página y lograr conseguir cualquier otro error que pueda surgir y que el equipo no haya encontrado con anterioridad.
+						<br>
+					Los errores encontrados fueron solucionados y se termino con los cambios realizados, haciendo entrega del trabajo en su totalidad</p>
+				</section>
+			</main>
+			
+			<aside>
+				<h3>Herramientas</h3>
+				<h4>Wampserver.</h4>
+				<p> Se trata de un servidor cuyas principales características son su funcionalidad con la base de datos de MySQL, el uso de apache, y su uso con el lenguaje PHP, debido a los puntos anteriores y a su fácil implementación fue elegido para poder desarrollar la practica requerida.</p>
+
+				<h4>MySQL.</h4>
+				<p>MySQL es un software creado por la empresa sueca MySQL AB por David Axmark, Allan Larsson y Michael Widenius. Su lenguaje de programación se trata de Structured Query Lenguaje(SQL) desarrollado en 1981 por IBM. Como muchos otros sistemas de gestión MySQL cuenta con elementos que apoyan al mantenimiento y uso de las bases de datos, tales como datos relacionales, integridad referencial y transacciones.</p>
+
+				<h4>FileZilla.</h4>
+				<p>Es una aplicación desarrollada en 2001 por Tim Koose, tiene la funcionalidad de descargar páginas web de su respectivo servidor, siempre y cuando se cuente con la información de esta misma. Para el desarrollo de las estancias fue indispensable debido a que se requería descargar todos los paquetes de un servidor a partir del cual se realizarían cambios y se vería como es su comportamiento.</p>
+
+				<h4>Atom</h4>
+				<p>Se trata de un editor de texto, el cual funciona para varios tipos de equipos. Fue creado por GitHub el 26 de febrero de 2014.</p>
+			</aside>
+		</div>
+
+		<footer>
+			<ul>
+				<li> <a href="https://capasiti.tamaulipas.gob.mx/login/index.php" target="_blank"> Página de la plataforma en la actualidad</a></li>
+			</ul>
+		</footer>
+
+	</div>
+</body>
+
+</html>

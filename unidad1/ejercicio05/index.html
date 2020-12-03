@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formularios en HTML</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<form action="aqui.html" method="POST">
+		<div>
+			<label>Nombre</label>
+			<input type="text" name="nombre" placeholder="escriba aqui" required>
+		</div>
+
+		<div>
+			<label>correo:</label>
+			<input type="email" name="correo" required>
+		</div>
+
+		<div>
+			<label>Contraseña</label>
+			<input type="password" name="contra">
+		</div>
+
+		<div>
+			<label>Telefono</label>
+			<input type="phone" name="telefono">
+		</div>
+
+		<div>
+			<label>Fecha</label>
+			<input type="date" name="fecha">
+		</div>
+
+		<div>
+			<label>descripción:</label>
+			<textarea name="descripcion">Aqui va la descripción</textarea>
+		</div>
+
+		<div>
+			<label>Color:</label>
+			<select name="color">
+				<option value="id1">Amarillo</option>
+				<option value="id2">rojo</option>
+				<option value="id3">verde</option>
+			</select>
+		</div>
+
+		<div>
+			<label>Genero</label>
+			<input type="radio" name="genero" value="Masculino">Masculino
+			<input type="radio" name="genero" value="Femenino">Femenino
+		</div>
+
+		<div>
+			<label>pasatiempos</label>
+			<input type="checkbox" name="pasatiempos" value="correr">correr
+			<input type="checkbox" name="pasatiempos" value="nadar">nadar
+			<input type="checkbox" name="pasatiempos" value="bailar">bailar 
+		</div>
+
+		<input type="submit" name="boton" value="enviar">
+
+	</form>
+</body>
+</html>

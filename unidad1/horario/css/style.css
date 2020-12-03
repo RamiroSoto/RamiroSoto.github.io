@@ -1,0 +1,36 @@
+.InglesVII{
+	background-color: blue; 
+}
+
+.DiseñoI{
+	background-color: red;
+}
+
+.formulacionp{
+	background-color: magenta;
+}
+
+.lenguajes{
+	background-color: yellow;
+}
+
+.requisitos{
+	background-color: green;
+}
+
+.liderazgo{
+	background-color: rgb(255,134,51);
+}
+
+.progra{
+	background-color: rgb(51,255,122);
+}
+
+#agenda, #agenda tr td, #agenda tr th{
+	font-size: 15px;
+	color: black;
+	border: solid;
+	border-radius: 5%;
+	border-color: black;
+	text-align: center;
+}

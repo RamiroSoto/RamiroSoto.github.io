@@ -1,0 +1,55 @@
+body{
+	width: 700px;
+	margin: auto;
+	background-color: aqua;
+}
+
+.contenido{
+	box-sizing: content-box;
+	background-color: white;
+}
+
+.contenido img{
+	width: 50%;
+	height: 50%;
+}
+
+header{
+	display: flex;
+	border-style: dotted;
+}
+
+header img{
+	margin-left: 50px;
+}
+
+nav{
+	height: 30px;
+	font-size: 15px;
+	margin-top: 0;
+	background-color: gray;
+	text-align: center;
+}
+
+.partes{
+	border-style: dotted;
+}
+
+.principal{
+	display: flex;
+    padding: 10px 25px;
+    justify-content: space-around;
+}
+
+.principal main{
+    width: 70%;
+    margin-right: 20px;
+}
+
+.principal aside{
+    width: 30%;
+}
+.flotante{
+    float: right;
+    margin-right: 15px;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>ejemplo de html</title>
+		<!--Desde una css-->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!--estilos internos-->
+		<style type="text/css">
+			h4{
+				color: red;
+				background-color: black;
+				text-transform: lowercase;
+				text-align: right;
+				font-size: 25px;
+			}
+			a{
+				color: orange;
+				text-transform: uppercase;
+				text-decoration: none;
+				margin-right: 50px; 
+			}
+			p{
+				text-align: justify;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--encabezados-->
+		<h1 style="color: rgb(255, 87, 51)">hola mundo</h1> <!--en línea-->
+		<h2 style="color: #ff5733; background-color: blue; text-align: center; text-transform: uppercase; font-size: 40px;">hola mundo2</h2>
+		<h3 style="color: lime">hola mundo3</h3>
+		<h4>cuatro</h4>
+		<h4>cuatro</h4>
+		<h1>cuatro</h1>
+		<h5 class="titulos_principales">H5</h1>
+		<h5>H5</h1>
+		<h6 class="subtitulos">H6</h5>
+		<!--Parrafos-->
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+
+		<!--enlaces-->
+		<a href="subdirectorio/pagina2.html">ir a página 2</a>
+		<p></p>
+		<a href="http://www.google.com" target="_blank">ir a google</a>
+		<br>
+		<a href="http://www.youtube.com" target="_blank"><img src="img/f1.png" alt="alto bronzeado y guapo" width="5%"></a>
+		
+		<!--listas-->	
+		<!--ordenadas-->
+		<ol>
+			<li>inicio</li>
+			<li>saludo</li>
+			<li>fin</li>
+		</ol>
+
+		<!--desordenadas-->
+		<ul type="circle">
+			<li>amarillo</li>
+			<li>rojo</li>
+			<li>azul</li>
+		</ul>
+
+		<!--definicion-->
+		<dl>
+			<dt>umeros naturales</dt>
+			<dd>usados al contar</dd>
+			<dt>numeros enteros</dt>
+			<dd>conjuntos de los demas</dd>
+		</dl>
+
+		<ul>
+			<li><a href="inicio.html">Inicio</a></li>
+			<li> <a href="productos.html">Productos</a></li>
+			<li><a href="acercade.html">A cerca de</a></li>
+		</ul>
+
+		<!--tablas-->
+		<hl>Tablas</hl>	
+		<table width="80%" border="1" id="agenda">
+			<caption >Tabla 1 agenda telefonica</caption>
+			<thead>
+				<tr>
+					<th colspan="3">Agenda telefonica</th>
+				</tr>
+
+				<tr>
+					<th>ID</th>
+					<th>nombre</th>
+					<th>telefono</th>
+				</tr>	
+			</thead>
+
+			<tbody>
+				<tr>
+				<td rowspan="2">1</td>
+				<td rowspan="2">Juan</td>
+				<td>8341397936</td>
+			</tr>
+			<tr>
+				<td>12345788</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Mario</td>
+				<td>834 1793956 <br> 8341334565</td>
+			</tr>
+			</tbody>
+			
+		</table>
+
+	</body>
+</html>

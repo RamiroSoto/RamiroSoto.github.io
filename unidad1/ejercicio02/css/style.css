@@ -1,0 +1,54 @@
+body{
+	width: 650px;
+	margin: auto;
+	background-color: gray;
+}
+
+#banner{
+	width: 100%;
+
+}
+
+.contenido{
+	background-color: white;
+	padding: 10px;
+}
+
+.titulos_principales{
+	font-size: 40px;
+	color: lime;
+	text-transform: uppercase;
+	text-align: center;
+	text-shadow: gray 2px 1px;
+}
+
+.subtitulos{
+	font-size: 25px;
+	color: gray;
+	text-transform: capitalize;
+	text-align: left;
+	text-decoration: underline; 
+}
+
+p{
+	text-align: justify;
+}
+
+a{
+	margin-right: 10px;
+}
+
+/*pagina de moviles */
+.moviles{
+	display: flex;
+	margin: 10px;
+	border: dashed;
+	background-color: cyan;
+	border-radius: 5%;
+	padding: 10px;
+}
+
+.moviles img{
+	margin-right: 10px;
+	border-radius: 20px 0px 20px 0px;
+}
