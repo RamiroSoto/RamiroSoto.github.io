@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orden de compra</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<div class="contenido">
+    <div class="principal">
+        <body>
+            <div>
+                <H1>Orden de compra</H1>
+                <label>Producto:</label>
+                <select name="productos" id="productos">
+                    <option value="Arduino">Arduino</option>
+                    <option value="N555">N555</option>
+                    <option value="Pilas">Pilas</option>
+                    <option value="Conectores">Conectores</option>
+                </select>   
+            </div>
+            <div>
+                
+                <input type="text" id="precio" placeholder="Introduce el precio">
+            </div>
+            <div>
+                
+                <input type="text" id="unidades" placeholder="Introduce las unidades">
+            </div>
+            <button onclick="agregar();">Agregar</button>
+            <table>
+                <thead>
+                    <tr>
+                        <td colspan='4' >subtotal</td>
+                        <td id='subtotal'><span class="subtotal"></span></td>
+                    </tr>
+        
+                    <tr>
+                        <td colspan='4' >IVA: </td>
+                        <td id='iva'><span class="iva"></span></td>
+                    </tr>
+        
+                    <tr>
+                        <td colspan='4' >Total a pagar: </td>
+                        <td id='total'><span class="total"></span></td>
+                    </tr>
+                </thead >
+
+                <tbody>
+                    <tr>
+                        <td>Producto</td>
+                        <td>Precio Unitario</td>
+                        <td>Unidades</td>
+                        <td>Monto</td>
+                    </tr>
+                </tbody>
+
+                <tfoot> 
+                </tfoot>
+                
+            </table>
+        </body>
+     <p id = "contador"><span class="contador">...</span></p>  
+    </div>
+    
+</div>
+       
+
+
+</html>

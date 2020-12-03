@@ -1,0 +1,23 @@
+body{
+	margin: auto;
+	width: 150px;
+	margin-top: 50px;
+}
+
+button{
+	color: black;
+	background-color: #ccc;
+	width: 100px;
+	height: 50px;
+}
+
+div{
+	width: 200px;
+	height: 250px;
+	border-style: dashed;
+	border-radius: 50px;
+}
+
+h1{
+	text-align: center;
+}

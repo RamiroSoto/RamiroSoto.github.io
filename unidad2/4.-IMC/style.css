@@ -1,0 +1,40 @@
+body{
+	width: 700px;
+	margin: auto;
+	background-color: aqua;
+}
+
+.contenido{
+	box-sizing: content-box;
+	background-color: white;
+}
+
+.contenido img{
+	width: 50%;
+	height: 50%;
+}
+
+form{
+	width:300px;
+	padding:16px;
+	border-radius:10px;
+	margin:auto;
+	background-color:#ccc;
+}
+
+form label{
+	font-weight:bold;
+}
+
+img{
+	border-radius: 20px;
+	border-style: dotted;
+	display: block;
+	margin: auto;
+	width: 200px;
+	height: 200px;
+}
+
+h1{
+	text-align: center;
+}
